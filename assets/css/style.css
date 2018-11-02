@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    border: 20px solid white;
+    padding: 0 0 40 0px;
+    color: #223322;
+    margin: 0 auto;
+    background: url("../images/leaves.png");
+
+}
+
+/* General */
+
+header {
+    width: 100%;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+h2,h3,p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: #177965;
+    margin-bottom: 20px;
+    }
+
+
+
+/* This Nav Bar got me ALL THE WAY MESSED UP */
+
+header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: white;
+    background: white;
+}
+
+h1 {
+    float: left;
+    width: 400px;
+    height: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    line-height: 90px;
+    color: white;
+    text-align: center;
+    background: #177965;
+
+
+}
+
+nav {
+    float: right;
+    margin-top: 25px;
+}
+
+ul {
+  list-style-type: none;
+  color: #cccccc;
+  margin-right: 5%;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+li {
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #223322;
+  border-left: 1px solid #efefef;
+}
+
+
+
+
+
+/* About Me Page */
+
+#main-container {
+    padding-top: 130px;
+}
+
+.main-section {
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    }
+
+
+}
+
+/*Contact */
+
+/* Portfolio */
