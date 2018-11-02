@@ -9,6 +9,10 @@ body {
 
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* General */
 
 header {
@@ -16,7 +20,7 @@ header {
 
 }
 
-.container {
+.centerheader {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
@@ -26,11 +30,17 @@ header {
 h2,h3,p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 800;
-    color: #177965;
     margin-bottom: 20px;
     }
 
+h2 {
+    color: #177965;
+    font-size: 34px;
+    padding-bottom: 15px;
+    width: 100%;
+    border-bottom: 2px solid #dddddd;
 
+}
 
 /* This Nav Bar got me ALL THE WAY MESSED UP */
 
@@ -46,11 +56,11 @@ header {
 
 h1 {
     float: left;
-    width: 400px;
+    width: 375px;
     height: 90px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    line-height: 90px;
+    font-size: 40px;
+    line-height: 60px;
     color: white;
     text-align: center;
     background: #177965;
@@ -100,9 +110,41 @@ li {
     border: 1px solid #dddddd;
     }
 
-
+.auth-image {
+    float: left;
+    width: 100%;
+    height: auto; 
+    margin-right: 25px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    
 }
 
 /*Contact */
+
+form{
+    margin-bottom: 1cm;
+
+}
+
+form {
+    display: block;
+    margin-top: 0cm;
+}
+
+label {
+    cursor: default;
+}
+#name, #email {
+opacity: 0.55;
+padding: 5px;
+
+}
+
+input {
+    width: 900px;
+
+}
+
 
 /* Portfolio */
