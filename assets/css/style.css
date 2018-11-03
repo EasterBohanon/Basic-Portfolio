@@ -9,18 +9,16 @@ body {
 
 }
 
-
 /* General */
 
 
 
-/*
+
 h2,h3,p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 800;
     margin-bottom: 20px;
     }
-*/
 
 h2 {
     color: #177965;
@@ -29,16 +27,24 @@ h2 {
     width: 100%;
     border-bottom: 2px solid #dddddd;
 
+
+
+}
+
+p:last-child {
+    margin-bottom: 0;
 }
 
 /* This Nav Bar got me ALL THE WAY MESSED UP */
 
 header {
     position: fixed;
-    z-index: 2;
+    z-index: 99;
+    margin: 0 0 30px;
+    overflow: auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
-    border-bottom:2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
     color: white;
     background: white;
 }
@@ -46,7 +52,7 @@ header {
 .centerheader {
 
     width: 960px;
-    height:100px;
+    height: 100px;
     margin: 0 auto;
     padding: 1px;
     /* Zindex: 99; */
@@ -58,14 +64,17 @@ header {
 
 h1 {
     float: left;
-    width: 370px;
+    width: 350px;
     height: 75px;
-    padding: 30px 30px 35px 30px;
+    /*padding: 30px 30px 35px 30px;
     margin: -1px 0px 0px 0px;
-    font-size: 40px;
-    line-height: 60px;
+    */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    line-height: 80px;
     color: white;
     text-align: center;
+    text-decoration: none;
     background: #177965;
 
 
@@ -83,6 +92,17 @@ nav {
 
 }
 
+nav a {
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: #223322;
+    text-decoration: none;
+    border-left: 1px solid white;
+
+}
+
 
 
 /* About Me Page */
@@ -94,13 +114,15 @@ section {
     flex: 1;
     background: white;
 
+
 }
 
 .me {
-    width: 960px;
+   max-width: 960px;
     margin: 0px auto;
     background-color: white;
     border: 2px solid #dddddd;
+    float: left;
 
     }
 
@@ -109,9 +131,9 @@ section {
 }
 
 .auth-image {
-    max-width: 100%;
     height: auto;
     float: left;
+    margin-top: 10px;
     margin-right: 25px;
     margin-bottom: 5px;
     padding-top: 10px;
@@ -159,6 +181,7 @@ footer {
 section {
     clear: both;
     padding: 10px 0px 60px 0px;
+    min-height: calc(100vh - 70px);
     margin: 120px auto;
     flex: 1;
 }
@@ -191,13 +214,33 @@ padding: 5px;
     overflow: hidden;
 }
 
-button {
+.button {
     border: 0;
     padding: 0px;
 
 }
-input {
-    width: 900px;
+
+
+input[type=text],
+input[type=email],
+textarea {
+    height: 35px;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 14px;
+    border:1px solid #dddddd;
+}
+textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #177965;
+    border: 0 none;
 
 }
 
